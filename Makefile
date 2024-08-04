@@ -6,8 +6,8 @@ clean:
 
 # Path: server.c
 server: server.c
-	gcc -g -Wall -o server server.c
+	gcc -g -Wall -o server server.c -pthread
 
 # Path: client.c
 client: client.c
-	gcc -g -Wall -o client client.c
+	gcc -g -Wall -o client client.c -pthread
